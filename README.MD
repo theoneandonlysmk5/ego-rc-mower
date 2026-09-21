@@ -39,8 +39,8 @@ Source: [bill of materials](02-components/bill-of-materials.xlsx), together with
 
 | Component | Identification / specification in the supplied files | Role and evidence limits |
 | --- | --- | --- |
-| EGO mower | Exact mower model not identified | Original battery-powered platform; the transmission's compatibility list does not identify this mower's model. |
-| EGO self-propelled transmission | EGO Power+ 2826067001; listing names LM2130SP and LM2150SP 21-inch mowers | OEM drive-unit reference; see [product image](02-components/EGO%20Self-Propelled%20Unit%20Transmission.jpg). |
+| EGO mower | Exact mower model not identified | Existing/reused—reference only. Original battery-powered platform; the transmission's compatibility list does not identify this mower's model. |
+| EGO self-propelled transmission | EGO Power+ 2826067001; listing names LM2130SP and LM2150SP 21-inch mowers | Existing/reused—reference only. OEM drive-unit reference; see [product image](02-components/EGO%20Self-Propelled%20Unit%20Transmission.jpg). |
 | RC transmitter | Microzone C7 Mini, 7 channels | Actual [transmitter photograph](02-components/RC%20Transmitter.jpg). The separate [alternative product reference](02-components/RC%20Transmitter_alternative_reference.jpg) depicts a Microzone 6CH product and is not the identification source for the photographed transmitter. |
 | RC receiver | Microzone MC8RE, 8 channels, 2.4 GHz, HV marking, dual antennas | Actual [receiver photograph](02-components/RC%20Receiver.jpg). The wiring drawing shows four used control channels, not the receiver's total capacity. |
 | Linear actuator | USLICCX LA-T8-12-FS-30/8-64; 12 V DC; listed 1.2-inch (about 30.5 mm) stroke, 64 N, 0.6 in/s (about 15 mm/s), IP54 | Moves the axle-coupling linkage; [component reference](02-components/Micro%20Electric%20Linear%20Actuator.jpg). |
@@ -51,7 +51,7 @@ Source: [bill of materials](02-components/bill-of-materials.xlsx), together with
 | Linear bearing blocks | SCS6UU, 6 mm bore, four-piece pack | Linear-guide hardware reference; [product image](02-components/Linear%20Bearing%20Slide%20Block.jpg). Purchased quantity is not an installed count. |
 | Small fixed rollers | TIESOME 1/2-inch rigid fixed casters with metal top plates | [Product image](02-components/Omni%20wheels.jpg) shows a 16-piece pack; BOM lists five packs / 80 pieces. Small rollers are mounted around the front wheel circumference in the [installation photo](03-installation/Omni%20wheels%20final%20look.jpg). |
 
-**BOM scope:** This bill of materials lists parts purchased for the conversion. Components reused from the original EGO mower are excluded. The component overview above also includes the original mower and OEM reference information for context; these entries do not imply separate purchases. Reused components and custom mechanical assemblies are described in the system, electrical, and mechanical sections.
+**BOM scope:** This bill of materials includes purchased conversion parts plus existing original-mower components for context. Existing/reused items are labeled in the workbook and are not additional purchases. Reused mechanical assemblies and custom fabrication are described in the system, electrical, and mechanical sections.
 
 ## Mechanical implementation
 
@@ -106,9 +106,9 @@ The converter branch connects on the battery side of the main fuse and emergency
 
 ### Actuator and right-motor isolation
 
-The dual SPDT relay circuit reverses the 12 V polarity across the actuator. The wiring diagram labels extension as **axles coupled** and retraction as **axles disengaged**. The three-pole relay switches all three right-motor phase wires (U/V/W); its coil is drawn from COM1 to the negative node, rather than from a separate receiver channel.
+The dual SPDT relay circuit reverses the 12 V polarity across the actuator. The wiring diagram labels extension as **axles coupled** and retraction as **axles disengaged**. The three-pole relay switches all three right-motor phase wires (U/V/W). Its coil is paralleled with the COM2 / M2 retract lead to the negative node, so the relay energizes during retraction / axles disengaged rather than from a separate receiver channel. That matches the functional diagram, which shows the relay open in coupled mode and energized/closed in disengaged mode.
 
-The functional diagram describes that relay as open in coupled mode and energized/closed in disengaged mode. This expresses the intended relationship between the electrical command and axle mode. No coupler-position sensor, verified transition timing, or controller configuration is supplied to prove that electrical switching occurs only after the mechanical shift completes.
+No coupler-position sensor, verified transition timing, or controller configuration is supplied to prove that electrical switching occurs only after the mechanical shift completes.
 
 ### Blade interface
 
