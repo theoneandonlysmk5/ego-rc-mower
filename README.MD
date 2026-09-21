@@ -13,7 +13,7 @@ The photographs show the physical build, and the electrical diagram documents th
 - [Mower operation video](07-operation-video/mower.mp4): approximately 2 minutes 6 seconds; shows outdoor travel and changes of heading on grass.
 - [Earlier mower video](07-operation-video/earlier_mower.mp4): short outdoor clip retained under its supplied filename.
 - [Rear mechanism demonstration](04-mechanical-details/gear_drive_demo.mp4): approximately 13 seconds; close-up of the rear assembly.
-- [Side view](06-final-system/final_mower_side.jpg) and [front underside view](06-final-system/final_mower_part_front.jpg).
+- [Side view](06-final-system/final_mower_side.jpg) and [front overhead view](06-final-system/final_mower_part_front.jpg).
 - [Original mower](01-original-mower/mower.jpg) and [original underside/drive assembly](01-original-mower/original_mower.jpg).
 
 These recordings are qualitative demonstrations, not measured range, stopping-distance, endurance, or safety-validation tests. Filenames do not establish the revision of every component visible in a clip.
@@ -73,7 +73,7 @@ In the coupled position, the coupler overlaps both half-axles. In the disengaged
 
 ### Front wheels
 
-The [installation close-up](03-installation/Omni%20wheels%20final%20look.jpg) shows small fixed rollers attached around an original wheel to provide lateral rolling freedom during turns. The complete front and side photographs show roller-covered front wheels. A separate [front underside photograph](06-final-system/final_mower_part_front.jpg) shows larger caster assemblies on brackets; the archive therefore records more than one front-wheel arrangement without a dated revision history proving which is the final configuration for every demonstration.
+The [installation close-up](03-installation/Omni%20wheels%20final%20look.jpg) shows small fixed rollers attached around an original wheel to provide lateral rolling freedom during turns. The complete front, side, and [overhead front photographs](06-final-system/final_mower_part_front.jpg) show roller-covered front wheels.
 
 ### Overall mechanical illustration
 
