@@ -11,10 +11,10 @@ The photographs show the physical build, and the electrical diagram documents th
 | ![Complete mower](06-final-system/final_mower_front.jpg) | ![Rear drive and actuator assembly](06-final-system/final_mower_part_rear.jpg) |
 
 - [Mower operation video](07-operation-video/mower.mp4): approximately 2 minutes 6 seconds; shows outdoor travel and changes of heading on grass.
-- [Earlier mower video](07-operation-video/earlier_mower.mp4): short outdoor clip retained under its supplied filename.
+- [Earlier mower video](07-operation-video/earlier_mower.mp4): shows the rear wheels slipping before star-drive coated screws were installed on them.
 - [Rear mechanism demonstration](04-mechanical-details/gear_drive_demo.mp4): approximately 13 seconds; close-up of the rear assembly.
-- [Side view](06-final-system/final_mower_side.jpg) and [front overhead view](06-final-system/final_mower_part_front.jpg).
 - Original mower: [front view](01-original-mower/original_mower_front.jpg), [rear view](01-original-mower/original_mower_rear.jpg), and [underside/drive assembly](01-original-mower/original_mower_underside.jpg).
+- Current mower: [Side view](06-final-system/final_mower_side.jpg) and [front overhead view](06-final-system/final_mower_part_front.jpg).
 
 These recordings are qualitative demonstrations, not measured range, stopping-distance, endurance, or safety-validation tests. Filenames do not establish the revision of every component visible in a clip.
 
@@ -44,7 +44,7 @@ Source: [bill of materials](02-components/bill-of-materials.xlsx), together with
 | RC transmitter | Microzone C7 Mini, 7 channels | Actual [transmitter photograph](02-components/RC%20Transmitter.jpg). The separate [alternative product reference](02-components/RC%20Transmitter_alternative_reference.jpg) depicts a Microzone 6CH product and is not the identification source for the photographed transmitter. |
 | RC receiver | Microzone MC8RE, 8 channels, 2.4 GHz, HV marking, dual antennas | Actual [receiver photograph](02-components/RC%20Receiver.jpg). The wiring drawing shows four used control channels, not the receiver's total capacity. |
 | BLDC motor driver board | Jiqu Technology sensorless RC version; listed 6–60 V DC, 600 W, 40 A peak; forward/reverse and braking; PWM / 0–5 V / potentiometer speed control; overtemperature and overcurrent protection; 63 × 45 × 36 mm | Right rear-wheel motor control in the wiring diagram. Located in the rear electronics enclosure, behind the rear axle; [product reference](02-components/BLDC%20Motor%20Driver%20Board.jpg). Specifications are from the supplied product image. |
-| Brushed DC motor driver | Jiqu Technology DC85V50-K RC version; receiver connector and aluminum enclosure; listing advertises 800 W and 24/48/85 V options; forward/reverse speed control | Left rear-wheel motor control in the wiring diagram. Located in the rear electronics enclosure, behind the rear axle; [product reference](02-components/Brushed%20DC%20Motor%20Driver.jpg). Model identification is from the image; the selected voltage variant and applicable power rating remain to be confirmed. |
+| Brushed DC motor driver | Jiqu Technology DC85V50-K RC version; receiver connector and aluminum enclosure; listing advertises 800 W and 24/48/85 V options; forward/reverse speed control | Left rear-wheel motor control in the wiring diagram. Located in the rear electronics enclosure, behind the rear axle; [product reference](02-components/Brushed%20DC%20Motor%20Driver.jpg). Model identification is from the image. |
 | Linear actuator | USLICCX LA-T8-12-FS-30/8-64; 12 V DC; listed 1.2-inch (about 30.5 mm) stroke, 64 N, 0.6 in/s (about 15 mm/s), IP54 | Moves the axle-coupling linkage; [component reference](02-components/Micro%20Electric%20Linear%20Actuator.jpg). |
 | Dual-relay RC PWM switch | Q1 module with two SRD-05VDC-SL-C relays; 5 V coil markings; 10 A contact marking | Actuator polarity switching in the diagram; [component reference](02-components/RC%20Dual-Relay%20PWM%20Switch.jpg). Contact markings alone do not establish the assembled motor-load rating. |
 | RC PWM switch modules | ZORZA, listed 5–12 V DC, 20 A; one pack of two | [Product reference](02-components/RC%20PWM%20Switch%20Controller.jpg). The listing does not establish that these provide the isolated dry contacts shown for blade control. |
@@ -87,7 +87,7 @@ This overview helps locate the motors, axle coupling, actuator, and control func
 
 ![As-built electrical wiring diagram](05-electrical-details/rc-mower-electrical-wiring-diagram.png)
 
-The project builder confirms that this diagram represents the installed wiring. It documents the motor-driver connections, receiver power, actuator relay circuit, right-motor isolation relay, and blade-control interface.
+This diagram represents the installed wiring. It documents the motor-driver connections, receiver power, actuator relay circuit, right-motor isolation relay, and blade-control interface.
 
 ### Documented channel assignment
 
