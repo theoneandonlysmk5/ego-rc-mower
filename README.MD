@@ -14,7 +14,7 @@ The photographs show the physical build, and the electrical diagram documents th
 - [Earlier mower video](07-operation-video/earlier_mower.mp4): short outdoor clip retained under its supplied filename.
 - [Rear mechanism demonstration](04-mechanical-details/gear_drive_demo.mp4): approximately 13 seconds; close-up of the rear assembly.
 - [Side view](06-final-system/final_mower_side.jpg) and [front overhead view](06-final-system/final_mower_part_front.jpg).
-- [Original mower](01-original-mower/mower.jpg) and [original underside/drive assembly](01-original-mower/original_mower.jpg).
+- Original mower: [front view](01-original-mower/original_mower_front.jpg), [rear view](01-original-mower/original_mower_rear.jpg), and [underside/drive assembly](01-original-mower/original_mower_underside.jpg).
 
 These recordings are qualitative demonstrations, not measured range, stopping-distance, endurance, or safety-validation tests. Filenames do not establish the revision of every component visible in a clip.
 
@@ -29,7 +29,7 @@ The supplied diagrams describe four RC control functions:
 3. Linear-actuator extension/retraction to couple or separate the rear half-axles.
 4. Blade-enable/start control through the mower's existing control circuit.
 
-The electrical drawing identifies a **left brushed DC motor and driver** and a **right sensorless three-phase BLDC motor and driver**. In coupled mode, the left drive turns both rear wheels through the coupling and the right motor's three phases are disconnected by a three-pole relay. In disengaged mode, the half-axles rotate independently and the right motor is connected for independent rear-wheel control and steering. This control arrangement is documented in the as-built electrical diagram. Exact motor and driver model numbers are not specified in the component list.
+The electrical drawing identifies a **left brushed DC motor and driver** and a **right sensorless three-phase BLDC motor and driver**. In coupled mode, the left drive turns both rear wheels through the coupling and the right motor's three phases are disconnected by a three-pole relay. In disengaged mode, the half-axles rotate independently and the right motor is connected for independent rear-wheel control and steering. This control arrangement is documented in the as-built electrical diagram. The component list identifies the brushed driver as DC85V50-K and provides specifications for the sensorless BLDC driver board. Exact motor model numbers and a distinct BLDC driver model number are not supplied.
 
 The system uses operator radio commands. No autonomous navigation, obstacle sensing, or software control implementation is included.
 
@@ -43,6 +43,8 @@ Source: [bill of materials](02-components/bill-of-materials.xlsx), together with
 | EGO self-propelled transmission | EGO Power+ 2826067001; listing names LM2130SP and LM2150SP 21-inch mowers | Existing/reused—reference only. OEM drive-unit reference; see [product image](02-components/EGO%20Self-Propelled%20Unit%20Transmission.jpg). |
 | RC transmitter | Microzone C7 Mini, 7 channels | Actual [transmitter photograph](02-components/RC%20Transmitter.jpg). The separate [alternative product reference](02-components/RC%20Transmitter_alternative_reference.jpg) depicts a Microzone 6CH product and is not the identification source for the photographed transmitter. |
 | RC receiver | Microzone MC8RE, 8 channels, 2.4 GHz, HV marking, dual antennas | Actual [receiver photograph](02-components/RC%20Receiver.jpg). The wiring drawing shows four used control channels, not the receiver's total capacity. |
+| BLDC motor driver board | Jiqu Technology sensorless RC version; listed 6–60 V DC, 600 W, 40 A peak; forward/reverse and braking; PWM / 0–5 V / potentiometer speed control; overtemperature and overcurrent protection; 63 × 45 × 36 mm | Right rear-wheel motor control in the wiring diagram. Located in the rear electronics enclosure, behind the rear axle; [product reference](02-components/BLDC%20Motor%20Driver%20Board.jpg). Specifications are from the supplied product image. |
+| Brushed DC motor driver | Jiqu Technology DC85V50-K RC version; receiver connector and aluminum enclosure; listing advertises 800 W and 24/48/85 V options; forward/reverse speed control | Left rear-wheel motor control in the wiring diagram. Located in the rear electronics enclosure, behind the rear axle; [product reference](02-components/Brushed%20DC%20Motor%20Driver.jpg). Model identification is from the image; the selected voltage variant and applicable power rating remain to be confirmed. |
 | Linear actuator | USLICCX LA-T8-12-FS-30/8-64; 12 V DC; listed 1.2-inch (about 30.5 mm) stroke, 64 N, 0.6 in/s (about 15 mm/s), IP54 | Moves the axle-coupling linkage; [component reference](02-components/Micro%20Electric%20Linear%20Actuator.jpg). |
 | Dual-relay RC PWM switch | Q1 module with two SRD-05VDC-SL-C relays; 5 V coil markings; 10 A contact marking | Actuator polarity switching in the diagram; [component reference](02-components/RC%20Dual-Relay%20PWM%20Switch.jpg). Contact markings alone do not establish the assembled motor-load rating. |
 | RC PWM switch modules | ZORZA, listed 5–12 V DC, 20 A; one pack of two | [Product reference](02-components/RC%20PWM%20Switch%20Controller.jpg). The listing does not establish that these provide the isolated dry contacts shown for blade control. |
@@ -133,10 +135,13 @@ ego-rc-mower/
 ├── LICENSE.md
 ├── mermaid-diagram.png
 ├── 01-original-mower/
-│   ├── mower.jpg
-│   └── original_mower.jpg
+│   ├── original_mower_front.jpg
+│   ├── original_mower_rear.jpg
+│   └── original_mower_underside.jpg
 ├── 02-components/
 │   ├── bill-of-materials.xlsx
+│   ├── BLDC Motor Driver Board.jpg
+│   ├── Brushed DC Motor Driver.jpg
 │   ├── DC-DC Step-Down Converter.jpg
 │   ├── EGO Self-Propelled Unit Transmission.jpg
 │   ├── Linear Bearing Slide Block.jpg
